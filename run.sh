@@ -1,5 +1,9 @@
 #!/bin/bash
 
+mkdir -p ./data/grafana
+chown 472:472 ./data/grafana
+mkdir -p /data/influxdb
+
 docker-compose up -d
 
 echo "Grafana: http://127.0.0.1:3000 - admin/admin"
